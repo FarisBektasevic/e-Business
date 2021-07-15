@@ -50,12 +50,16 @@ section {
     padding: 60px 0;
 }
 
+.half {
+    width: 50%;
+}
+
 /*---------------------------------------------------
                         HEADER
 ------------------------------------------------------*/
 
 header {
-    position: fixed;
+    position:fixed;
     width: 100%;
     height: 12vh;
     display: flex;
@@ -64,6 +68,7 @@ header {
     opacity: 0.7;
     color: #fff;
     font-size: 16px;
+    z-index: 1;
 }
 
 .logo {
@@ -109,11 +114,9 @@ header h1 span{
 }
 
 
- 
 /*---------------------------------------------------
                         SECTION START 
 ------------------------------------------------------*/
-
 
 .main-div {
     display: flex;
@@ -288,20 +291,252 @@ header h1 span{
     justify-content: center;
     align-items: center;
     border: thin solid rgb(211, 211, 211);
+    border-top: none;
 }
 
-.member p:first-of-type {
+.member div:last-of-type{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.member div p:first-of-type {
     font-size: 130%;
+
     margin-bottom: 6px;
 }
 
-.member p:last-of-type {
+.member div p:last-of-type {
     font-size: 85%;
     margin-bottom: 15px;
 }
 
-.member img {
+.member div img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.member-box {
+    position: relative;
+    width: 100%;
+    height: 90%;
+
+}
+
+.overlay-member {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #000;
+    transition: 0.5s ease;
+}
+
+
+
+.overlay-member-list {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.overlay-member-list li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.overlay-member-list li:last-of-type{
+    margin-right: 0;
+}
+
+.overlay-member-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 150%;
+    border-radius: 50%;
+    transition: color 0.5s;
+}
+
+.overlay-member-list li a:hover{
+    color:#3ec1d5;
+    
+}
+
+.member-box:hover .overlay-member{
+    opacity: 0.6;
+}
+
+
+/*---------------------------------------------------
+                    SECTION PICS 
+------------------------------------------------------*/
+
+.section-pics {
+    padding: 0;
+}
+
+.pics{
+    display: flex;
+    width: 100%;
+    height: 360px;
+}
+
+.side2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.774)), url(img/santorini.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 10%;
+    color: #fff;
+    line-height: 200%;
+}
+
+.side2 h4 {
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.kitchen {
+    width: 100%;
+    height: 100%;
+}
+
+.side2 a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 150px;
+    text-align: center;
+    padding: 3px 0;
+    margin-top: 15px;
+    border-radius: 25px;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+.side2 a:hover {
+    background-color: #3ec1d5;
+    border-color: #3ec1d5;
+}
+
+/*---------------------------------------------------
+                    SECTION PORTFOLIO 
+------------------------------------------------------*/
+
+.btn-list {
+    
+}
+
+.btn-list li {
+ list-style: none;
+ display: inline;
+ margin-right: 20px;
+}
+
+.btn-list li:last-child{
+    margin-right: 0px;
+}
+
+.btn-list li button {
+    background-color: #fff;
+    border: thin solid rgba(85, 84, 84, 0.993);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: color 0.2s, background-color 0.5s, border-color 0.5s;
+}
+
+.btn-list li:first-child button {
+    border-color: #3ec1d5;
+    background-color: #3ec1d5;
+    color: #fff;
+}
+
+.btn-list li button:hover {
+    background-color: #3ec1d5;
+    border-color: #3ec1d5;
+    color: #fff;
+}
+
+.img-grid {
+    margin-top: 50px;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 120%;
+}
+
+.img-box {
+    width: 30%;
+    margin: 1%;
+    position: relative;
+}
+
+.img-box img{
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin: 0;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.712);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease-out;
+}
+.overlay p:first-of-type{
+    text-transform: uppercase;
+    font-size: 120%;
+}
+
+.overlay p:last-of-type{
+    text-transform: capitalize;
+    font-size: 70%;
+    margin-top: 40px;
+}
+
+.text {
+    white-space: nowrap; 
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.img-box:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+
+/*---------------------------------------------------
+                    SECTION TABLE 
+------------------------------------------------------*/
+
+.section-table {
+    background-color: rgb(248, 245, 245);
 }
