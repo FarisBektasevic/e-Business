@@ -435,9 +435,6 @@ header h1 span{
                     SECTION PORTFOLIO 
 ------------------------------------------------------*/
 
-.btn-list {
-    
-}
 
 .btn-list li {
  list-style: none;
@@ -540,3 +537,126 @@ header h1 span{
 .section-table {
     background-color: rgb(248, 245, 245);
 }
+
+.tables {
+    padding: 0 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tables div {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-table {
+    width: 100%;
+    border: thin solid rgb(192, 187, 187);
+    border-spacing: 0px;
+    margin: 3%;
+    background-color: #fff;
+}
+
+
+.pricing-table tr th {
+    border-bottom: thin solid rgb(192, 187, 187);
+    padding: 15px 0;
+    color: rgb(117, 115, 115);
+    font-weight: 100;
+    font-size: 90%;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+.pricing-table tr:first-of-type th,
+.pricing-table tr:last-of-type th{
+    text-align: center;
+    line-height: 170%;
+    padding: 30px 0;
+    border-bottom: none;
+}
+
+
+.pricing-table tr:last-of-type th a {
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    border: 1px solid #444;
+    padding: 12px 24px;
+    margin: 7px 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 90%;
+    transition: background-color 0.5s ease, color 0.3s;
+}
+
+.pricing-table tr:last-of-type th a:hover {
+    background-color: white;
+    color: rgb(117, 115, 115);
+}
+
+.pricing-table tr th p:first-of-type,
+.pricing-table tr th p:last-of-type {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(32, 32, 32);
+}
+
+.pricing-table tr th p:last-of-type{
+    
+    font-size: 110%;
+}
+
+.pricing-table2 tr th:first-of-type{
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-table2 tr th .sale{
+    position: absolute;
+    left: -60px;
+    top:20px;
+    background-color: #3ec1d5;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 2px 60px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.pricing-table tr th span:last-of-type {
+    font-size: 80%;
+}
+
+.gray-icon {
+    color: rgb(117, 115, 115);
+    font-size: 15x;
+    margin-right: 19px;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.blue-icon {
+    color: #3ec1d5;
+    font-size: 15x;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.pricing-table tr:last-of-type th .blue-btn {
+    background-color: #3ec1d5;
+}
+
+.pricing-table2 tr:first-of-type{
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+
