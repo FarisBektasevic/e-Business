@@ -1,0 +1,363 @@
+@media only screen and (max-width: 1200px) {
+    .section-about {
+        padding-left:  5%;
+        padding-right: 5%;
+    }
+   
+    .about .description {
+       padding-right: 0;
+    }
+
+    .info-box ul li a i {
+        padding: 10px;
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and ( max-width: 1023px){
+
+    section {
+        padding: 40px 0;
+    }
+    
+    html {
+        font-size: 16px;
+    }
+    
+    .navigation .nav-links li {
+        display: none;
+    }
+
+    .bar {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 180%;
+    }
+
+    h2::after {
+        width: 140px;
+    }
+
+    .box h5 {
+        font-size: 150%;
+    }
+
+    .box i {
+        font-size: 220%;
+    }
+
+    .pricing-table tr th p:first-of-type {
+        font-size: 130%;
+    }
+
+    .pricing-table tr th p:last-of-type {
+        font-size: 100%;
+    }
+
+    .pricing-table tr:first-of-type th,
+    .pricing-table tr:last-of-type th {
+        padding: 23px 0;
+    }
+
+    .pricing-table tr:last-of-type th a {
+        font-size: 85%;
+        padding: 10px 20px;
+    }
+
+    .info-box ul li a i {
+        padding: 8px;
+        font-size: 80%;
+    }
+
+    .info-box ul li {
+        margin-right: 15px;
+    }
+
+    .info-box p {
+        margin-bottom: 20px;
+    }
+
+    .info-box p:first-of-type {
+        margin-bottom: 30px;
+    }
+
+    .section-line {
+        font-size: 110%;
+        height: 17vh;
+    }
+
+    .section-line a {
+        padding: 3px 15px;
+    }
+
+    .team {
+        padding: 0 1%;
+    }
+
+    .member {
+        width: 21%;
+        margin: 0 10px;
+    }
+
+    .member div p:first-of-type {
+        font-size: 120%;
+    }
+
+    .side2 h4 {
+        font-size: 110%;
+    }
+    
+    .side2 p {
+        font-size: 95%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 767px){
+
+    h2 {
+        font-size: 160%;
+        margin-bottom: 30px;
+    }
+
+    h2::after {
+        width: 120px;
+        margin-top: 15px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    
+    
+    h1 {
+        font-size: 160%;
+    }
+
+    .bar {
+        font-size: 180%;
+    }
+
+    .start-textbox h3 {
+        font-size: 120%;
+    }
+
+    .start-textbox p {
+        font-size: 30px;
+        padding: 0 5%;
+    }
+
+    .start-textbox a {
+        font-size: 16px;
+        padding: 7 21px;
+        height: 39px;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .picture {
+        margin-bottom: 20px;
+    }
+
+    .picture,
+    .description{
+        width: 100%;
+    }
+
+    .section-about{
+        height: auto;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .description p {
+        margin-bottom: 20px;
+    }
+
+    .mreza {
+        padding: 0 2%;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team {
+        padding: 0 2%;
+    
+    }
+
+    .member {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .member div p:first-of-type{
+        font-size: 110%;
+    }
+
+    .pics {
+        flex-wrap: wrap;
+        height: auto;
+        
+    }
+    
+    .side {
+        width: 100%;
+        height: 250px;
+    }
+
+    .side2 {
+        width: 100%;
+        height: 250px;
+        padding-left: 5%;
+    }
+
+    .side2 h4 {
+        font-size: 110%;
+    }
+
+    .side2 p {
+        font-size: 85%;
+        line-height: 170%;
+    }
+
+    .side2 a {
+        width: 130px;
+    }
+
+    .btn-list li {
+        margin-right: 12px;
+    }
+
+    .btn-list li button {
+        font-size: 80%;
+        padding: 8px 16px;
+    }
+
+    .img-grid {
+        margin-top: 35px;
+    }
+
+    .tables {
+        padding: 0 2%;
+        flex-wrap: wrap;
+    }
+
+    .tables div {
+        width: 100%;
+    }
+
+    .pricing-table {
+        margin: 3% 0;
+    }
+
+    .section-testimonials {
+        height: 50vh;
+    }
+
+    .testimonials {
+        padding: 0 5%;
+    }
+
+    .testimonials img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonials p:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    .news {
+        padding: 0 2%;
+        flex-wrap: wrap;
+    }
+
+    .news div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .news div .comments {
+        justify-content: space-between;
+    }
+
+    .news div .news-textbox {
+        margin-bottom: 15px;
+    }
+
+    .news div .read-btn {
+        font-size: 65%;
+        padding: 8px 0;
+        width: 100px;
+    }
+
+    .section-line {
+        font-size: 100%;
+        padding: 0 2%;
+    }
+
+    .section-line h4 {
+        margin-right: 0;
+    }
+
+    .nesto {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .section-line a {
+        padding: 3px 15px;
+    }
+
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .info-box {
+        padding: 0 2%;
+        width: 100%;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+        border-bottom: thin solid rgb(173, 173, 173);
+    }
+
+    .second-box p:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* HEADER */
+
+    .start-textbox h3 {
+        text-align: center;
+    }
+
+    .start-textbox p {
+        font-size: 24px;
+        padding: 0 1%;
+    }
+
+    /* TEAM */ 
+
+    .member {
+        width: 100%;
+    }
+}

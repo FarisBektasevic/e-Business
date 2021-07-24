@@ -1,5 +1,4 @@
 * {
-    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -90,6 +89,12 @@ header {
     align-items: center;
 }
 
+ .bar {
+    display: none;
+    color: #fff;
+    font-size: 200%;
+}
+
 .nav-links{
     list-style: none;
 }
@@ -133,7 +138,7 @@ header h1 span{
 
 .section-start {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.651)), url(img/background1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.685)), url(img/background1.jpg);
     text-transform: capitalize;
     color: #fff;
     display: flex;
@@ -187,6 +192,13 @@ header h1 span{
 .section-about {
     height: 82vh;
     background-color: rgb(248, 245, 245);
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .second-header {
@@ -196,15 +208,11 @@ header h1 span{
 }
 
 .picture {
-    width: 50%;
-    float: left;
-    display: flex;
-    flex-direction: row-reverse;
+    width: 45%;
 }
 
 .description {
-    width: 50%;
-    float: right;
+    width: 45%;
     padding-left: 2%;
     padding-right: 10%;
 }
@@ -217,8 +225,8 @@ header h1 span{
 }
 
 .room-pic {
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .about-list {
@@ -546,7 +554,7 @@ header h1 span{
 }
 
 .tables {
-    padding: 0 5%;
+    padding: 0 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -891,6 +899,7 @@ header h1 span{
     padding: 15px;
     border: 1px solid #444;
     border-radius: 50%;
+    color: #444;
     transition: background-color 0.5s ease, color 0.3s;
 }
 
